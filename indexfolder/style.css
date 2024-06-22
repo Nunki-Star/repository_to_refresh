@@ -1,9 +1,9 @@
 div:first-of-type p{
     background-color: red;
 }
-div:nth-child(2){
-    background-color: lightblue;
-}
+/* div:nth-child(2){ */
+    /* background-color: lightblue; */
+/* } */
 .ddd_class{
     color:lightgreen
 }
