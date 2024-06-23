@@ -5,11 +5,34 @@
 }
 
 .container{
-    border:purple 5px solid
+    border:purple 5px solid;
+    display:flex;
+
 }
 
 .container div{
-    font-size: 80px;
+    font-size: 30px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:whitesmoke;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    flex:1
     
+}
+
+.container div:nth-child(1){
+    background-color: deepskyblue;
+}
+
+.container div:nth-child(2){
+    background-color: deeppink;
+}
+
+.container div:nth-child(3){
+    background-color: lightgreen;
+}
+
+@media screen and (max-width:1000px){
+    .container{
+        flex-direction: column;
+    }
 }
