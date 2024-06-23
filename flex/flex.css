@@ -9,8 +9,8 @@
     display:flex;
     flex-wrap: wrap;
     min-height: 100vh;
-    gap:5px;
-
+    /*padding:5px*/
+    gap:20px
     
 
   
@@ -24,7 +24,9 @@
     text-align: center;
     border-radius: 30px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    width:33%
+    width:calc(33.33% - 15px);
+    /*margin:5px*/
+
     
     
 }
@@ -65,7 +67,12 @@
 .container div:nth-child(9){
     background-color: lightskyblue;
 }
-
+.container div:nth-child(10){
+    background-color: aqua;
+}
+.container div:nth-child(11){
+    background-color: yellow;
+}
 @media screen and (max-width:800px){
     .container{
         flex-direction: column;
