@@ -7,6 +7,9 @@
 .container{
     border:purple 5px solid;
     display:flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+  
 
 }
 
@@ -15,7 +18,7 @@
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color:whitesmoke;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    flex:1
+    width:33.33%
     
 }
 
@@ -31,7 +34,23 @@
     background-color: lightgreen;
 }
 
-@media screen and (max-width:1000px){
+.container div:nth-child(4){
+    background-color: dodgerblue;
+}
+
+.container div:nth-child(5){
+    background-color: tomato;
+}
+
+.container div:nth-child(6){
+    background-color: turquoise;
+}
+
+.container div:nth-child(7){
+    background-color: red;
+}
+
+@media screen and (max-width:800px){
     .container{
         flex-direction: column;
     }
